@@ -1,59 +1,93 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<div align="center">
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+  # 📚 Mini-Perpus
+  **Sistem Manajemen & Inventaris Perpustakaan Berbasis Web**
 
-## About Laravel
+  [![Laravel](https://img.shields.io/badge/Laravel-v12.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com)
+  [![PHP](https://img.shields.io/badge/PHP-v8.2-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://php.net)
+  [![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-v3.x-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
+  [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+</div>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 👨‍🎓 Identitas Mahasiswa
 
-## Learning Laravel
+- **Nama:** Henoch Abraham Saerang
+- **NIM:** 23210035
+- **Mata Kuliah:** Pemrograman Framework
+- **Program Studi:** S1 Teknik Informatika
+- **Instansi:** Universitas Negeri Manado
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🚀 Tentang Proyek
 
-## Laravel Sponsors
+**Mini-Perpus** adalah aplikasi web inventaris perpustakaan yang dibangun menggunakan framework **Laravel** dengan pola arsitektur **MVC (Model-View-Controller)**. Proyek ini dikembangkan untuk memenuhi penilaian Ujian Tengah Semester (UTS) Pemrograman Framework.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Sistem ini mendukung pengolahan data koleksi buku dan kategorisasinya dengan menerapkan relasi database *One-to-Many* serta prinsip validasi data *server-side*.
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## ✨ Fitur Utama
 
-## Contributing
+- **Manajemen Kategori Buku (CRUD):**
+  - Menambah, melihat, memperbarui, dan menghapus kategori.
+  - Proteksi penghapusan kategori yang masih memiliki relasi ke data buku.
+  - Penghitungan jumlah buku terintegrasi per kategori.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- **Manajemen Katalog Buku (CRUD):**
+  - Menambah buku baru dengan pemilihan kategori dinamis melalui **Custom Searchable Dropdown**.
+  - Menampilkan daftar buku lengkap dengan nama kategori dalam bentuk teks.
+  - Fitur edit dan hapus data buku.
+  - Indikator status stok buku (Tersedia, Terbatas, Habis).
 
-## Code of Conduct
+- **Antarmuka Modern & Responsif:**
+  - Desain *Enterprise Dashboard* menggunakan **Tailwind CSS**.
+  - Elemen interaktif dipandu **FontAwesome Icons** & JavaScript Native.
+  - *Feedback alert* interaktif untuk penanganan notifikasi sukses/gagal.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+---
 
-## Security Vulnerabilities
+## 🛠️ Stack Teknologi
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- **Backend:** PHP 8.2, Laravel 12
+- **Database:** MySQL / SQLite (Eloquent ORM)
+- **Frontend:** Blade Templating Engine, Tailwind CSS (CDN)
+- **Interaktivitas:** Vanilla JavaScript, FontAwesome 6
 
-## License
+---
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## ⚙️ Panduan Instalasi Lokal
+
+Jika Anda ingin menjalankan proyek ini di lingkungan lokal, ikuti langkah-langkah berikut:
+
+1. **Clone Repositori:**
+   git clone [https://github.com/henochsaerang/mini-perpus.git](https://github.com/henochsaerang/mini-perpus.git)
+   cd mini-perpus
+
+2. **Install Depedensi Composer:**
+   composer install
+
+3. **Konfigurasi Environment:**
+   Salin file `.env.example` menjadi `.env`:
+   cp .env.example .env
+
+   Generate application key:
+   php artisan key:generate
+
+4. **Konfigurasi Database & Migrasi:**
+   Sesuaikan pengaturan database pada file `.env`, lalu jalankan migrasi:
+   php artisan migrate
+
+5. **Jalankan Server Lokal:**
+   php artisan serve
+
+   Aplikasi dapat diakses melalui browser di `[http://127.0.0.1:8000](http://127.0.0.1:8000)`.
+
+---
+
+<div align="center">
+  <p>Dikembangkan untuk Evaluasi UTS Pemrograman Framework — UNIMA</p>
+</div>
